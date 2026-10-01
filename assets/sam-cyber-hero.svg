@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<defs>
+  <style>
+    @keyframes glow-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.8; } }
+    @keyframes scan-line { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+    @keyframes flicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.9; } }
+    .glow-text { animation: flicker 3s infinite; }
+    .scan { animation: scan-line 8s linear infinite; }
+    .pulse { animation: glow-pulse 3s ease-in-out infinite; }
+  </style>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#05050a"/>
+    <stop offset="55%" stop-color="#0b0520"/>
+    <stop offset="100%" stop-color="#020b14"/>
+  </linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#8a2be2"/>
+    <stop offset="50%" stop-color="#b45cff"/>
+    <stop offset="100%" stop-color="#00d8ff"/>
+  </linearGradient>
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+  <filter id="glow-filter">
+    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<!-- Background -->
+<rect width="1200" height="360" fill="url(#bg)"/>
+
+<!-- Animated glow orbs -->
+<ellipse cx="930" cy="110" rx="310" ry="180" fill="#8a2be2" opacity=".15" filter="url(#blur)" class="pulse"/>
+<ellipse cx="250" cy="270" rx="300" ry="150" fill="#00d8ff" opacity=".10" filter="url(#blur)" class="pulse"/>
+
+<!-- Grid pattern -->
+<g opacity=".18" stroke="#9b66ff" stroke-width="1">
+  <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/>
+  <path d="M80 0V360M200 0V360M320 0V360M440 0V360M560 0V360M680 0V360M800 0V360M920 0V360M1040 0V360"/>
+</g>
+
+<!-- Scan line effect -->
+<rect x="0" y="0" width="1200" height="2" fill="#00d8ff" opacity="0.3" class="scan"/>
+
+<!-- Main panel -->
+<rect x="55" y="48" width="1090" height="265" rx="18" fill="#05050a" fill-opacity=".78" stroke="url(#glow)" stroke-width="2" filter="url(#glow-filter)"/>
+
+<!-- Window controls -->
+<circle cx="82" cy="75" r="6" fill="#ff5f57"/>
+<circle cx="102" cy="75" r="6" fill="#febc2e"/>
+<circle cx="122" cy="75" r="6" fill="#28c840"/>
+
+<!-- Command prompt -->
+<text x="75" y="125" fill="#8a2be2" font-family="monospace" font-size="20" class="glow-text">$ whoami</text>
+
+<!-- Main identity -->
+<text x="75" y="158" fill="#e8e8f0" font-family="monospace" font-size="28" font-weight="bold" class="glow-text">samdavistwo-png</text>
+
+<!-- Tags/Focus -->
+<text x="75" y="206" fill="#00d8ff" font-family="monospace" font-size="18" class="glow-text">[ cyber ] [ ai ] [ automation ] [ linux ] [ builder ]</text>
+
+<!-- Philosophy -->
+<text x="75" y="248" fill="#a8a8b8" font-family="monospace" font-size="16">learn → test responsibly → build → document</text>
+
+<!-- Status line -->
+<text x="75" y="282" fill="#6f6f80" font-family="monospace" font-size="14">SYSTEM STATUS: ONLINE • MODE: BUILD/EXPLORE</text>
+
+<!-- Right side symbols -->
+<text x="1085" y="154" fill="#8a2be2" font-family="monospace" font-size="60" text-anchor="middle" class="glow-text">⌬</text>
+<text x="1085" y="206" fill="#00d8ff" font-family="monospace" font-size="38" text-anchor="middle" class="glow-text">⚡</text>
+
+</svg>
