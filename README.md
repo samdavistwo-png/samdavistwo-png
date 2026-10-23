@@ -4,6 +4,10 @@
 
 <br />
 
+<img src="./assets/sam-cyber-hero.gif" width="860" alt="Sam cyber hero" />
+
+<br />
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2600&pause=850&color=00D8FF&center=true&vCenter=true&width=780&lines=Sam+Davis+Henry+R;Information+Technology+Student;Cybersecurity+Learning+%7C+AI+%7C+Automation;Linux+%7C+Mobile+Experiments;Learn.+Build.+Test+Responsibly.)](https://github.com/samdavistwo-png)
 
 </div>
