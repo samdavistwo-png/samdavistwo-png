@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06070d"/>
+      <stop offset="50%" stop-color="#0b0918"/>
+      <stop offset="100%" stop-color="#050b14"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7">
+        <animate attributeName="stop-color" values="#a855f7;#06b6d4;#10b981;#a855f7" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#06b6d4">
+        <animate attributeName="stop-color" values="#06b6d4;#10b981;#a855f7;#06b6d4" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#10b981">
+        <animate attributeName="stop-color" values="#10b981;#a855f7;#06b6d4;#10b981" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="purpleGlow" cx="82%" cy="28%" r="40%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35">
+        <animate attributeName="stop-opacity" values="0.20;0.45;0.20" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="18%" cy="78%" r="40%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35">
+        <animate attributeName="stop-opacity" values="0.45;0.20;0.45" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#a855f7" stroke-width="0.6" stroke-opacity="0.14"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="280" rx="14" fill="url(#bgGrad)"/>
+  <rect width="900" height="280" rx="14" fill="url(#cyberGrid)"/>
+  <rect width="900" height="280" rx="14" fill="url(#purpleGlow)"/>
+  <rect width="900" height="280" rx="14" fill="url(#cyanGlow)"/>
+
+  <rect x="42" y="26" width="816" height="228" rx="16" fill="#080711" fill-opacity="0.92" stroke="url(#borderGrad)" stroke-width="2.5"/>
+
+  <line x1="45" y1="0" x2="855" y2="0" stroke="#06b6d4" stroke-width="1.2" stroke-opacity="0.22">
+    <animate attributeName="y1" values="32;248;32" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="32;248;32" dur="7s" repeatCount="indefinite"/>
+  </line>
+
+  <circle cx="72" cy="54" r="6" fill="#ff5f56"/>
+  <circle cx="92" cy="54" r="6" fill="#ffbd2e"/>
+  <circle cx="112" cy="54" r="6" fill="#27c93f"/>
+  <text x="450" y="58" font-family="monospace" font-size="13" fill="#64748b" text-anchor="middle">sam@cyber:~ — bash — 120x40</text>
+
+  <text x="68" y="96" font-family="monospace" font-size="18" fill="#a855f7" font-weight="bold">$ whoami</text>
+  <text x="68" y="132" font-family="monospace" font-size="30" fill="#ffffff" font-weight="bold">samdavistwo-png</text>
+  <rect x="355" y="108" width="13" height="26" fill="#06b6d4">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="68" y="170" font-family="monospace" font-size="16" fill="#06b6d4" font-weight="bold">[ cyber ]  [ ai ]  [ automation ]  [ linux ]  [ builder ]</text>
+  <text x="68" y="202" font-family="monospace" font-size="15" fill="#cbd5e1">learn  -&gt;  test responsibly  -&gt;  build  -&gt;  document</text>
+
+  <circle cx="75" cy="230" r="4.5" fill="#10b981">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="88" y="234" font-family="monospace" font-size="13" fill="#94a3b8">SYSTEM STATUS: ONLINE  •  MODE: BUILD/EXPLORE</text>
+
+  <g transform="translate(785, 95)">
+    <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="none" stroke="#a855f7" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,-15 13,-7.5 13,7.5 0,15 -13,7.5 -13,-7.5" fill="none" stroke="#06b6d4" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="8s" repeatCount="indefinite"/>
+    </polygon>
+    <circle cx="0" cy="0" r="4" fill="#10b981">
+      <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(785, 165)">
+    <path d="M 4,-22 L -14,4 L 0,4 L -6,24 L 16,-4 L 2,-4 Z" fill="#facc15">
+      <animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
